@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      function loadPage() {
+        console.log('body loaded');
+
+        document
+          .getElementById('myForm')
+          .addEventListener('onload', function() {
+            console.log('form loaded');
+          });
+      }
+    </script>
+  </head>
+  <body onload="loadPage()">
+    <!-- <script src="./test1.js"></script>
+    <script src="./test2.js"></script> -->
+    <form id="myForm"></form>
+  </body>
+</html>
